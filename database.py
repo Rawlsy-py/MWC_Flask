@@ -25,6 +25,7 @@ conn.execute('''CREATE TABLE products
             name TEXT NOT NULL,
             price REAL NOT NULL,
             description TEXT,
+            dimensions TEXT,
             image TEXT,
             stock INTEGER NOT NULL,
             categoryId INTEGER,
