@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{%  extends "base.html" %}
+{% block content %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Made_With_Care_Art_BTSP</title>
-    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" link="https://cdn.reflowhq.com/v1/toolkit.min.css">
-    <link rel="stylesheet" href="/static/CSS/styles.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container-fluid"><a class="navbar-brand" href="#">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">Gallery</a></li>
-                </ul><a class="btn btn-primary ms-auto" role="button" href="cart.html">See Cart</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ title }}</h1>
+                <p>{{ description }}</p>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <h1 style="margin: 15px;">Products</h1>
-        <div data-reflow-type="product-list" data-reflow-layout="cards" data-reflow-order="date_desc"></div>
     </div>
-    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdn.reflowhq.com/v1/toolkit.min.js"></script>
-    <script src="/static/js/bs-init.js"></script>
-</body>
 
-</html>
+{% endblock %}
